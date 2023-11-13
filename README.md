@@ -1,8 +1,10 @@
 # Anything Rest API
 
+```
 Author: Jayson (TheCodeBeast)
 
 mail: jaysontechsolutions@gmail.com
+```
 
 ## Installation
 
