@@ -203,7 +203,7 @@
         "kind": 6,
         "importPath": "basic api without authentication.mini.views",
         "description": "basic api without authentication.mini.views",
-        "peekOfCode": "class ProductListView(APIView):\n    def get(self, request, *args, **kwargs):\n        products = Product.objects.all()\n        serializer = ProductSerializer(products, many=True)\n        return Response(serializer.data)",
+        "peekOfCode": "class ProductListView(APIView):\n    def get(self, request, *args, **kwargs):\n        products = Products.objects.all()\n        serializer = ProductSerializer(products, many=True)\n        return Response(serializer.data)\n    def post(self, request, *args, **kwargs):\n        serializer = ProductSerializer(data=request.data)\n        if serializer.is_valid():\n            serializer.save()\n            return Response(serializer.data, status=status.HTTP_201_CREATED)",
         "detail": "basic api without authentication.mini.views",
         "documentation": {}
     },
