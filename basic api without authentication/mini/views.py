@@ -24,7 +24,7 @@ class ProductListView(APIView):
 class ProductDetailView(APIView):
     def get_object(self, pk):
         try:
-            return Product.objects.get(pk=pk)
+            return Products.objects.get(pk=pk)
         except Product.DoesNotExist:
             raise Http404
 
